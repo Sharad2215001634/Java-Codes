@@ -3,15 +3,19 @@ import java.util.Scanner;
 public class even_odd_switch {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the Number : ");
-        int n = sc.nextInt();
+        int n;
+        n = 0;
+        System.out.print("Enter the Number : ");
+        n = sc.nextInt();
         switch(n % 2)
         {
             case 0:
-                System.out.println("even");
+                System.out.println("You entered the number : "+n);
+                System.out.println("You entered a EVEN number");
                 break;
             case 1:
-                System.out.println("Odd");
+            System.out.println("You entered the number : "+n);
+                System.out.println("You entered a ODD number");
                 break;
         }
 
